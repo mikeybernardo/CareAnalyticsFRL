@@ -14,6 +14,9 @@ print("Running program...")
 # Load CA directory
 os.chdir("C:\CareAnalytics\CareAnalytics_Ver2")
 
+# Final destination folder for storing the XML files
+DestFolder = "\\\QLDHEALTH\.NBR-CL1_DATA3.Nambour.SCG.BNN.HEALTH\MedImage\BTS\MedPhys Projects\FRL for CTs\Radiation Dose Logs"
+
 # Run CAtool on connected nodes
 DefEdge = 'CAtool.exe /sr ct /node DefinitionEdge /w 01 /out DefEdge.xml'
 Force75568 = 'CAtool.exe /sr ct /node Force75568 /w 01 /out Force75568.xml'
@@ -28,9 +31,6 @@ DefinitionFH_NGH = 'CAtool.exe /sr ct /node DefinitionFH_NGH /w 01 /out Definiti
 
 systems = [DefEdge, Force75568, Force75566, Force75564, ArtisZeeMP, ArtisZeegoQ, Symbia2078, Symbia2079, BiographMCT, DefinitionFH_NGH]
 nodes = ["DefEdge", "Force75568", "Force75566", "Force75564", "ArtisZeeMP", "ArtisZeegoQ", "Symbia2078", "Symbia2079", "BiographMCT", "DefinitionFH_NGH"]
-
-# Final destination folder for storing the XML files
-DestFolder = "\\\QLDHEALTH\.NBR-CL1_DATA3.Nambour.SCG.BNN.HEALTH\MedImage\BTS\MedPhys Projects\FRL for CTs\Radiation Dose Logs"
 
 # Create XML files using CAtool
 for i in systems:
