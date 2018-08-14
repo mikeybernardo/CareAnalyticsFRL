@@ -1,4 +1,4 @@
-# Care Analytics Facility Reference Level extractor
+# CareAnalytics Facility Reference Level extractor
 
 <b> CareAnalytics Version 2.0 (2011) is required. </b>
 
