@@ -19,6 +19,7 @@ DestFolder = "\\\QLDHEALTH\.NBR-CL1_DATA3.Nambour.SCG.BNN.HEALTH\MedImage\BTS\Me
 
 # Run CAtool on connected nodes
 DefEdge = 'CAtool.exe /sr ct /node DefinitionEdge /w 01 /out DefEdge.xml'
+DefinitionAS = 'CAtool.exe /sr ct /node DefinitionAS /w 01 /out DefinitionAS.xml'
 Force75568 = 'CAtool.exe /sr ct /node Force75568 /w 01 /out Force75568.xml'
 Force75566 = 'CAtool.exe /sr ct /node Force75566 /w 01 /out Force75566.xml'
 Force75564 = 'CAtool.exe /sr ct /node Force75564 /w 01 /out Force75564.xml'
@@ -29,8 +30,8 @@ Symbia2079 = 'CAtool.exe /sr ct /node Symbia2079 /w 01 /out Symbia2079.xml'
 BiographMCT = 'CAtool.exe /sr ct /node BiographMCT /w 01 /out BiographMCT.xml'
 DefinitionFH_NGH = 'CAtool.exe /sr ct /node DefinitionFH_NGH /w 01 /out DefinitionFH_NGH.xml'
 
-systems = [DefEdge, Force75568, Force75566, Force75564, ArtisZeeMP, ArtisZeegoQ, Symbia2078, Symbia2079, BiographMCT, DefinitionFH_NGH]
-nodes = ["DefEdge", "Force75568", "Force75566", "Force75564", "ArtisZeeMP", "ArtisZeegoQ", "Symbia2078", "Symbia2079", "BiographMCT", "DefinitionFH_NGH"]
+systems = [DefEdge, DefinitionAS, Force75568, Force75566, Force75564, ArtisZeeMP, ArtisZeegoQ, Symbia2078, Symbia2079, BiographMCT, DefinitionFH_NGH]
+nodes = ["DefEdge", "DefinitionAS", "Force75568", "Force75566", "Force75564", "ArtisZeeMP", "ArtisZeegoQ", "Symbia2078", "Symbia2079", "BiographMCT", "DefinitionFH_NGH"]
 
 # Create XML files using CAtool
 for i in systems:
