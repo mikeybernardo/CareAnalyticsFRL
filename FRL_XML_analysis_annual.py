@@ -15,10 +15,10 @@ import matplotlib.pyplot as plt
 
 rad_logs = []
 
-# Find all files in the directory for a certain scanner
-for file in os.listdir(r'\\qldhealth\\.NBR-CL1_DATA3.Nambour.SCG.BNN.HEALTH\\MedImage\\BTS\\MedPhys Projects\\FRL for CTs\\Radiation Dose Logs\\'):
+# Find all files in the directory for a certain scanner. Insert file path
+for file in os.listdir(r''):
     if file.startswith('Force75568'):
-        rad_logs.append(os.path.join(r'\\qldhealth\\.NBR-CL1_DATA3.Nambour.SCG.BNN.HEALTH\\MedImage\\BTS\\MedPhys Projects\\FRL for CTs\\Radiation Dose Logs\\', file))
+        rad_logs.append(os.path.join(r'', file))
 
 # Get Data from XML files
 mydoc = []
