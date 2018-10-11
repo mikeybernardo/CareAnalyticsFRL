@@ -11,7 +11,7 @@ import numpy as np #Import Numpy for working with arrays
 from pandas import DataFrame
 
 #Parse XML file by name
-mydoc = minidom.parse(r'\\qldhealth\.NBR-CL1_DATA3.Nambour.SCG.BNN.HEALTH\MedImage\BTS\MedPhys Projects\FRL for CTs\Radiation Dose Logs\Force75568_2018_03_06.xml')
+mydoc = minidom.parse(r'')
 doseinfo = mydoc.getElementsByTagName('DoseInfo')
 
 # Parse XML Data
