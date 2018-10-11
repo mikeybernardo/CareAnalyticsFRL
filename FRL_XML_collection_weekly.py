@@ -15,7 +15,7 @@ print("Running program...")
 os.chdir("C:\CareAnalytics\CareAnalytics_Ver2")
 
 # Final destination folder for storing the XML files
-DestFolder = "\\\QLDHEALTH\.NBR-CL1_DATA3.Nambour.SCG.BNN.HEALTH\MedImage\BTS\MedPhys Projects\FRL for CTs\Radiation Dose Logs"
+DestFolder = ""
 
 # Run CAtool on connected nodes
 DefEdge = 'CAtool.exe /sr ct /node DefinitionEdge /w 01 /out DefEdge.xml'
